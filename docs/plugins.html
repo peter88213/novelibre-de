@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+
+<html lang="de" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Plugins &#8212; novelibre</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=75c7c72ae941e8b558d8"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8" />
+
+    <script src="_static/documentation_options.js?v=ba326627"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/translations.js?v=9bf55d28"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'plugins';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="icon" href="_static/nLogo32.ico"/>
+    <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
+    <link rel="search" title="Suche" href="search.html" />
+    <link rel="next" title="Hilfsskripte" href="scripts.html" />
+    <link rel="prev" title="Merkmale" href="features.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="de"/>
+  <meta name="docsearch:version" content="5.68+" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Zum Hauptinhalt springen</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Zurück zum Anfang</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Versionswarnung"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Website-Navigation" aria-expanded="false" aria-controls="pst-primary-sidebar-modal">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/novelibre.png" class="logo__image only-light" alt="novelibre - Home"/>
+    <img src="_static/novelibre.png" class="logo__image only-dark pst-js-only" alt="novelibre - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="features.html">
+    Merkmale
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#" aria-current="page">
+    Plugins
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="scripts.html">
+    Hilfsskripte
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Suche" aria-label="Suche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Suche</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Farbmodus">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Farbmodus" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Hell"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dunkel"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="Systemeinstellungen"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>Systemeinstellungen</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Hell</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dunkel</button></li>
+  </ul>
+</div></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Suche" aria-label="Suche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Suche</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal" tabindex="-1"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="features.html">
+    Merkmale
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#" aria-current="page">
+    Plugins
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="scripts.html">
+    Hilfsskripte
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Farbmodus">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Farbmodus" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Hell"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dunkel"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="Systemeinstellungen"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>Systemeinstellungen</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Hell</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dunkel</button></li>
+  </ul>
+</div></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button type="button" id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar">
+  <svg class="pst-icon" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
+        <div class="sidebar-primary-item">
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Abschnitt Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Abschnitt Navigation</p>
+  <div class="bd-toc-item navbar-nav"></div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Startseite">
+        <i class="fa-solid fa-house"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Plugins</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="plugins">
+<h1>Plugins<a class="headerlink" href="#plugins" title="Link to this heading">#</a></h1>
+<p>Damit die vielen Funktionen das Programm nicht überladen, werden einige
+als Plugins angeboten, so dass nur diejenigen Benutzer sie installieren,
+die sie auch tatsächlich brauchen.</p>
+<ul class="simple">
+<li><p>Wenn es Ihnen also wichtig ist, Figuren, Schauplätze, Gegenstände und
+Plotlinien zu verfolgen, sollten sie das
+<a class="reference external" href="https://github.com/peter88213/nv_matrix/">nv_matrix</a>-Plugin
+installieren.</p></li>
+<li><p>Falls Sie mehr als ein Buchprojekt haben, oder eine Serie schreiben,
+können Sie mit der
+<a class="reference external" href="https://github.com/peter88213/nv_collection/">nv_collection</a>-Bücher/Serienverwaltung
+leicht zwischen Ihren <em>novelibre</em>-Projekten wechseln.</p></li>
+<li><p>Wenn Sie Ihren Schreibfortschritt verfolgen wollen, wird Ihnen die
+tägliche Wortzahlansicht von
+<a class="reference external" href="https://github.com/peter88213/nv_progress/">nv_progress</a>
+gefallen.</p></li>
+<li><p>Das
+<a class="reference external" href="https://github.com/peter88213/nv_snapshots/">nv_snapshots</a>-Plugin
+ist ein leichtgewichtiges Versionskontrollsystem.</p></li>
+<li><p>Wenn Sie Farben zur Organisation Ihres Projekts verwenden und mit dem Standard-Farbauswahldialog unzufrieden sind,
+könnte das Plugin <a class="reference external" href="https://github.com/peter88213/nv_color_palette">nv_color_palette</a>
+genau das Richtige für Sie sein.</p></li>
+<li><p>Wollen Sie sich beim Schreiben ganz und gar auf Ihren Text
+konzentrieren? Dann probieren Sie das
+<a class="reference external" href="https://github.com/peter88213/nv_writer/">nv_writer</a>-Plugin aus,
+das einen ablenkungsfreien Schreibmodus bietet, in dem Sie Szene für
+Szene eintippen können, als hätten Sie eine Schreibmaschine oder eine
+DOS-Textverarbeitung.</p></li>
+<li><p>Haben Sie einen E-Reader? Dann lassen Sie den
+<a class="reference external" href="https://github.com/peter88213/nv_epub/">nv_epub</a>-Exporter ein
+EPUB-Ebook erzeugen, entweder für den persönlichen Gebrauch oder als
+Grundlage für die Veröffentlichung.</p></li>
+<li><p>Wenn Ihnen etwas an einer ausgewogenen Textverteilung liegt, könnte
+die
+<a class="reference external" href="https://github.com/peter88213/nv_statistics/">nv_statistics</a>-Statistikanzeige
+etwas für Sie sein.</p></li>
+<li><p>Falls Sie Ihre Geschichten entsprechend einem bewährten
+dramaturgischen Schema anlegen wollen, können Sie mit Hilfe der
+<a class="reference external" href="https://github.com/peter88213/nv_templates/">nv_templates</a>-Geschichtenvorlagenverwaltung
+bequem eines in Ihr Projekt laden.</p></li>
+<li><p>Wenn Sie das freie <em>Zim Desktop wiki</em> für umfangreichen Weltenbau
+benutzen, können Sie es mit dem
+<a class="reference external" href="https://github.com/peter88213/nv_zim">nv_zim</a>-Plugin an
+<em>novelibre</em> anbinden.</p></li>
+<li><p>Falls für Sie der Verlauf der erzählten Zeit wichtig ist, gibt es
+mehrere Möglichkeiten, einen besseren Überblick zu bekommen:</p>
+<ul>
+<li><p>Das <a class="reference external" href="https://github.com/peter88213/nv_tlview/">nv_tlview</a>
+Zeitleistenbetrachter-Plugin,</p></li>
+<li><p>den <a class="reference external" href="https://github.com/peter88213/nv_timeline/">nv_timeline</a>
+Dateisynchronisierer für die freie <em>Timeline</em>-Anwendung, und</p></li>
+<li><p>den <a class="reference external" href="https://github.com/peter88213/nv_aeon2/">nv_aeon2</a>
+Dateisynchronisierer für das kommerzielle <em>Aeon Timeline 2</em>.</p></li>
+</ul>
+</li>
+<li><p>Haben Sie Linux, und <em>novelibre</em> sieht für Sie nicht schick genug
+aus? Oder bevorzugen Sie einen „dark mode“?
+Sehen Sie sich die alternativen Themes an, die vom
+<a class="reference external" href="https://github.com/peter88213/nv_themes/">nv_themes</a>-Plugin
+unterstützt werden.</p></li>
+<li><p>Falls Sie zwischen <em>yWriter</em> und <em>novelibre</em> wechseln wollen, könnte
+das <a class="reference external" href="https://github.com/peter88213/nv_yw7/">nv_yw7</a>
+yw7-Dateiimport/Export-Plugin praktisch sein.</p></li>
+<li><p>Wollen Sie sicherstellen, dass Sie auch die neueste Version von
+<em>novelibre</em> und seinen Plugins installiert haben? Starten Sie einfach
+von Zeit zu Zeit den Update-Checker
+<a class="reference external" href="https://github.com/peter88213/nv_updater/">nv_updater</a>.</p></li>
+<li><p>Wenn Sei sich mit XML auskennen, können Sie Ihre Abschnitte mit
+<a class="reference external" href="https://github.com/peter88213/nv_editor/">nv_editor</a> direkt in
+<em>novelibre</em> bearbeiten oder teilen.</p></li>
+<li><p>Wollen Sie Ihren Kapiteln oder Abschnitten im fertigen Dokument
+Metadaten wie Datum, Zeit oder Perspektivfigur voranstellen? Dann
+können Sie benutzerdefinierte Exportvorlagen erstellen und vom
+<a class="reference external" href="https://github.com/peter88213/nv_custom_export/">nv_custom_export</a>-
+Plugin automatisch anwenden lassen.</p></li>
+</ul>
+<p>Hier geht es zur englischsprachigen <a class="reference external" href="https://github.com/peter88213/novelibre/blob/main/docs/plugins.md">Liste aller
+Plugins</a>.</p>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="features.html"
+       title="Vorherige Seite">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">zurück</p>
+        <p class="prev-next-title">Merkmale</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="scripts.html"
+       title="Nächste Seite">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">weiter</p>
+        <p class="prev-next-title">Hilfsskripte</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026 by Peter Triesberger. All rights reserved
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Erstellt mit <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.2.0
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Erstellt mit dem <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.24.0
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
